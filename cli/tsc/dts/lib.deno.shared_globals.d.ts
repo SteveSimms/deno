@@ -360,9 +360,11 @@ declare namespace WebAssembly {
  *
  * @category Platform
  */
+
+type TimeHandler = string | ((...args: any[]) => void);
 declare function setTimeout(
-  /** callback function to execute when timer expires */
-  cb: (...args: any[]) => void,
+      /** callback function to execute when timer expires */
+    handler: TimeHandler,
   /** delay in ms */
   delay?: number,
   /** arguments passed to callback function */
