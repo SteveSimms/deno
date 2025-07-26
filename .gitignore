@@ -45,3 +45,12 @@ Untitled*.ipynb
 /.ms-playwright
 
 **/.claude/settings.local.json
+
+
+# Ignore_Folder_docs
+/Ignore_Folder_docs
+/Ignore_Folder_docs/issues
+/Ignore_Folder_docs/issues
+Ignore_Folder_docs/issues/issue_30166.md
+/Ignore_Folder_docs/issues
+Ignore_Folder_docs/issues/issue_30166.md

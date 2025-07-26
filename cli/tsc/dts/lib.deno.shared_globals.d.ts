@@ -361,10 +361,15 @@ declare namespace WebAssembly {
  * @category Platform
  */
 
+/**
+ * The callback to execute after the timer expires.
+ * Can be a function or a string of code to evaluate (browser-compatible).
+ */
 type TimeHandler = string | ((...args: any[]) => void);
+
 declare function setTimeout(
-      /** callback function to execute when timer expires */
-    handler: TimeHandler,
+  /** callback function to execute when timer expires */
+  handler: TimeHandler,
   /** delay in ms */
   delay?: number,
   /** arguments passed to callback function */
@@ -382,7 +387,7 @@ declare function setTimeout(
  */
 declare function setInterval(
   /** callback function to execute when timer expires */
-  cb: (...args: any[]) => void,
+  handler: TimeHandler,
   /** delay in ms */
   delay?: number,
   /** arguments passed to callback function */
